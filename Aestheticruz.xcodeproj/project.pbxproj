@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D46678EB1C6F9A2A00B889D6 /* GoalCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46678EA1C6F9A2A00B889D6 /* GoalCalories.swift */; };
+		D4C5D9141C7232940069405B /* WebSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C5D9131C7232940069405B /* WebSiteViewController.swift */; };
+		D4D18D8C1C6CE7130060FACE /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D18D8B1C6CE7130060FACE /* Calculations.swift */; };
+		D4D18D8E1C6D1FF40060FACE /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D18D8D1C6D1FF40060FACE /* CalcViewController.swift */; };
 		D4FD2AE61C6A157800F6C25D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD2AE51C6A157800F6C25D /* AppDelegate.swift */; };
 		D4FD2AE81C6A157800F6C25D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FD2AE71C6A157800F6C25D /* ViewController.swift */; };
 		D4FD2AEB1C6A157800F6C25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4FD2AE91C6A157800F6C25D /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D46678EA1C6F9A2A00B889D6 /* GoalCalories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalCalories.swift; sourceTree = "<group>"; };
+		D4C5D9131C7232940069405B /* WebSiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSiteViewController.swift; sourceTree = "<group>"; };
+		D4D18D8B1C6CE7130060FACE /* Calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		D4D18D8D1C6D1FF40060FACE /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
 		D4FD2AE21C6A157800F6C25D /* Aestheticruz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aestheticruz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FD2AE51C6A157800F6C25D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4FD2AE71C6A157800F6C25D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +107,10 @@
 			children = (
 				D4FD2AE51C6A157800F6C25D /* AppDelegate.swift */,
 				D4FD2AE71C6A157800F6C25D /* ViewController.swift */,
+				D4D18D8D1C6D1FF40060FACE /* CalcViewController.swift */,
+				D4D18D8B1C6CE7130060FACE /* Calculations.swift */,
+				D46678EA1C6F9A2A00B889D6 /* GoalCalories.swift */,
+				D4C5D9131C7232940069405B /* WebSiteViewController.swift */,
 				D4FD2AE91C6A157800F6C25D /* Main.storyboard */,
 				D4FD2AEC1C6A157800F6C25D /* Assets.xcassets */,
 				D4FD2AEE1C6A157800F6C25D /* LaunchScreen.storyboard */,
@@ -193,6 +205,7 @@
 				TargetAttributes = {
 					D4FD2AE11C6A157800F6C25D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = B8ZV74NHN3;
 					};
 					D4FD2AF51C6A157800F6C25D = {
 						CreatedOnToolsVersion = 7.2;
@@ -257,7 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4FD2AE81C6A157800F6C25D /* ViewController.swift in Sources */,
+				D4D18D8E1C6D1FF40060FACE /* CalcViewController.swift in Sources */,
+				D4C5D9141C7232940069405B /* WebSiteViewController.swift in Sources */,
+				D46678EB1C6F9A2A00B889D6 /* GoalCalories.swift in Sources */,
 				D4FD2AE61C6A157800F6C25D /* AppDelegate.swift in Sources */,
+				D4D18D8C1C6CE7130060FACE /* Calculations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Aestheticruz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aestheticruz.Aestheticruz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Aestheticruz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aestheticruz.Aestheticruz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +505,7 @@
 				D4FD2B0C1C6A157800F6C25D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4FD2B0D1C6A157800F6C25D /* Build configuration list for PBXNativeTarget "AestheticruzTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +514,7 @@
 				D4FD2B0F1C6A157800F6C25D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4FD2B101C6A157800F6C25D /* Build configuration list for PBXNativeTarget "AestheticruzUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +523,7 @@
 				D4FD2B121C6A157800F6C25D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
